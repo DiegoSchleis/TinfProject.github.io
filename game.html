@@ -11,13 +11,13 @@
 <body>
 <header>
     <div class="menubar">
-        <img alt="mainPage" src="img/800px-F1_logo.svg.png" id="bannerpic">
+        <a href="mainPage.html"><img alt="mainPage" src="img/800px-F1_logo.svg.png" id="bannerpic"></a>
         <ul>
             <li class="a"><a href="general.html" class="menuitem">General</a></li>
             <li class="a"><a href="drivers.html" class="menuitem">Drivers</a></li>
             <li class="a"><a href="cars.html" class="menuitem">Cars&<br>Teams</a></li>
             <li class="a"><a href="#" class="menuitem">Game</a></li>
-            <li class="a"><a href="#" class="menuitem">Sample</a></li>
+            <li class="a"><a href="imprint.html" class="menuitem">Imprint</a></li>
         </ul>
     </div>
 </header>
@@ -25,17 +25,14 @@
     <img class="imagegallarycurrent" src="img/f12016screen1.png">
     <img class="imagegallarycurrent" src="img/f12016screen2.jpg">
     <img class="imagegallarycurrent" src="img/f12016screen3.jpg">
+    <img class="imagegallarycurrent" src="img/f12016screen4.jpg">
 
     <div id="imagegallarywrap">
-        <div class="gallarybox">
-            <img class="imagegallary flt-right" src="img/f12016screen1.png" onclick="currentDiv(1)">
-        </div>
-        <div class="gallarybox">
-            <img class="imagegallary flt-right" src="img/f12016screen2.jpg" onclick="currentDiv(2)">
-        </div>
-        <div class="gallarybox">
-            <img class="imagegallary flt-right" src="img/f12016screen3.jpg" onclick="currentDiv(3)">
-        </div>
+        <img class="imagegallary flt-left" src="img/f12016screen1.png" onclick="currentDiv(1)">
+        <img class="imagegallary flt-left" src="img/f12016screen2.jpg" onclick="currentDiv(2)">
+        <img class="imagegallary flt-left" src="img/f12016screen3.jpg" onclick="currentDiv(3)">
+        <img class="imagegallary flt-left" src="img/f12016screen4.jpg" onclick="currentDiv(4)">
+        <div style="clear: both"></div>
     </div>
     <script>
         var slideIndex = 1;
@@ -69,6 +66,19 @@
             dots[slideIndex - 1].className += " w3-opacity-off";
         }
     </script>
+</section>
+<section id="gamearticle">
+    <article id="gametext">
+        <h2 class="headline">The Game(F1 2016)</h2>
+        <p class="text">
+            Published on 19th August 2016, F1 2016 is the latest edition of the F1 game series published and developed
+            by Codemasters. It is obviously based on real life Formula One and is the best F1 simulator ever published.
+            The
+            game has stunning graphics combined with the best and most realistic car handle ever. It also has a very
+            deep "career-mode" that can last over ten years(not real-life years). Additionally F1 2016 has an online
+            mode with matchmaking in case the AI-drivers are too easy for you.
+        </p>
+    </article>
 </section>
 <div class="clearfix" id="placeholder"></div>
 <footer>

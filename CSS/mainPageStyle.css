@@ -166,6 +166,7 @@ footer {
 
 .clearfix {
     clear: both;
+    float:none;
 }
 
 .flt-left {
@@ -430,12 +431,9 @@ section#articlecars{
 img#engine{
     width:70%;
 }
-img.imagegallery{
-    width:95%;
-}
 section#images{
-    max-width:95%;
-    margin:auto;
+    max-width:60%;
+    margin:3% auto 3% auto;
 }
 img.imagegallary{
     width:20%;
@@ -446,7 +444,37 @@ img.imagegallarycurrent{
     margin: auto;
 }
 div#imagegallarywrap{
-
-    display:inline-block;
-    white-space: nowrap;
+    overflow: auto;
+}
+div#k{
+    clear: both;
+    float: none;
+}
+article#gametext{
+    background-color: lightgray;
+    font-family: Raleway, Arial, serif;
+    width:100%;
+    margin: 3% 0 3% 0;
+}
+section#gamearticle{
+    width:95%;
+    margin:auto;
+    display: block;
+}
+section#imprint{
+    width:95%;
+    margin:auto;
+}
+article#imprinttext{
+    background-color: lightgray;
+    width: 100%;
+    font-family: Raleway, Arial, serif;
+    margin: 3% 0 3% 0;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+}
+.bold{
+    font-weight:bold;
 }
