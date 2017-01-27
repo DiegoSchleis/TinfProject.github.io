@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JavaScript/jquery-3.1.1.min.js"></script>
+    <script src="JavaScript/javaScriptFront.js"></script>
+    <link rel="stylesheet" href="CSS/startingPageStyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINF Project</title>
+
+</head>
+<body>
+<header>
+    <input type="button" value="Get started" onclick="slide('pepe')"/>
+    <img src="img/forFrontPage1.jpg" class="slideshow fadeout">
+    <img src="img/forFrontPage2.jpg" class="slideshow fadeout">
+    <img src="img/forFrontPage3.jpg" class="slideshow fadeout">
+    <img src="img/forFrontPage4.jpg" class="slideshow fadeout">
+    <img src="img/forFrontPage5.jpg" class="slideshow fadeout">
+    <img src="img/forFrontPage6.jpg" class="slideshow fadeout">
+
+</header>
+<div id="white">
+    <a name="pepe"></a>
+</div>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var x = document.getElementsByClassName("slideshow");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.opacity = "0";
+        }
+        slideIndex++;
+
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.opacity = "1";
+        setTimeout(carousel, 5000);
+    }
+</script>
+</body>
+
+</html>
