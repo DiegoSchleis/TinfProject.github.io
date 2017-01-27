@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TINF Project F1 Game</title>
+    <link rel="stylesheet" href="CSS/mainPageStyle.css" type="text/css">
+    <script src="JavaScript/jquery-3.1.1.min.js"></script>
+    <script src="JavaScript/javaScriptMain.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="menubar">
+        <img alt="mainPage" src="img/800px-F1_logo.svg.png" id="bannerpic">
+        <ul>
+            <li class="a"><a href="general.html" class="menuitem">General</a></li>
+            <li class="a"><a href="drivers.html" class="menuitem">Drivers</a></li>
+            <li class="a"><a href="cars.html" class="menuitem">Cars&<br>Teams</a></li>
+            <li class="a"><a href="#" class="menuitem">Game</a></li>
+            <li class="a"><a href="#" class="menuitem">Sample</a></li>
+        </ul>
+    </div>
+</header>
+<section id="images">
+    <img class="imagegallarycurrent" src="img/f12016screen1.png">
+    <img class="imagegallarycurrent" src="img/f12016screen2.jpg">
+    <img class="imagegallarycurrent" src="img/f12016screen3.jpg">
+
+    <div id="imagegallarywrap">
+        <div class="gallarybox">
+            <img class="imagegallary flt-right" src="img/f12016screen1.png" onclick="currentDiv(1)">
+        </div>
+        <div class="gallarybox">
+            <img class="imagegallary flt-right" src="img/f12016screen2.jpg" onclick="currentDiv(2)">
+        </div>
+        <div class="gallarybox">
+            <img class="imagegallary flt-right" src="img/f12016screen3.jpg" onclick="currentDiv(3)">
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("imagegallarycurrent");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+        }
+    </script>
+</section>
+<div class="clearfix" id="placeholder"></div>
+<footer>
+    <p id="footer">Diego Schleis</p>
+</footer>
+</body>
+</html>

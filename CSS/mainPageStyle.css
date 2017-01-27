@@ -90,18 +90,18 @@ section#teasercontent {
 }
 
 article#newswrap {
-    width: auto;
+    width: 100%;
     margin: auto;
 }
 
 div.news {
-    max-width: 375px;
-    min-width: 375px;
+    max-width: 25%;
+    min-width: 25%;
     height: 500px;
     background-color: #ff1227;
     display: block;
     border-radius: 5px;
-    margin: 3% 1.5% 0 3%;
+    margin: 3% 2.5% 0 4.5%;
     float: right;
     font-family: Raleway, Arial, serif;
     font-size: 17px;
@@ -218,7 +218,6 @@ img#pic1 {
 
 figure.piccontainer {
     margin: 1% 1% 1% 1%;
-    border: 1px solid black;
     display: block;
 }
 
@@ -292,7 +291,6 @@ p.textdriver {
 }
 
 img.schumi {
-    width: 50%;
     border: solid black 1px;
 }
 
@@ -358,13 +356,13 @@ img#sliderbutton1 {
 
 }
 
-img#sliderbutton1:hover, img#sliderbutton2:hover{
+img#sliderbutton1:hover, img#sliderbutton2:hover {
     opacity: 1;
     transition: 100ms;
 }
 
-div.imageslidertext:hover .imageheader{
-    opacity:1;
+div.imageslidertext:hover .imageheader {
+    opacity: 1;
     transition: 500ms;
 }
 
@@ -384,25 +382,28 @@ div.imageslider {
     width: auto;
     display: inline;
 }
-div.imageslidertext{
+
+div.imageslidertext {
     position: relative;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
-div.imageheader{
+
+div.imageheader {
     position: absolute;
     font-size: 300%;
     top: 81%;
-    left:0;
+    left: 0;
     opacity: 0;
-    color:white;
+    color: white;
     transition: 500ms;
-    width:100%;
+    width: 100%;
     padding: 50px 0 50px 50px;
-    background-color:black;
+    background-color: black;
     font-family: Raleway, Arial, serif;
 }
-div.text{
+
+div.text {
     color: white;
     font-size: 20px;
     top: 50%;
@@ -410,10 +411,42 @@ div.text{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-div#imagesliderwrap{
-    position:relative;
+
+div#imagesliderwrap {
+    position: relative;
     z-index: 2000;
 }
-article#carstext{
-    background-color: lightgrey;
+
+article#carstext {
+    background-color: lightgray;
+    width: 100%;
+    font-family: Raleway, Arial, serif;
+    margin: 3% 0 3% 0;
+}
+section#articlecars{
+    width:95%;
+    margin:auto;
+}
+img#engine{
+    width:70%;
+}
+img.imagegallery{
+    width:95%;
+}
+section#images{
+    max-width:95%;
+    margin:auto;
+}
+img.imagegallary{
+    width:20%;
+    margin: 1% 2% 3% 2%;
+}
+img.imagegallarycurrent{
+    width:100%;
+    margin: auto;
+}
+div#imagegallarywrap{
+
+    display:inline-block;
+    white-space: nowrap;
 }
