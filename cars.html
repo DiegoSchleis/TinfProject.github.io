@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/mainPageStyle.css" type="text/css">
+    <script src="JavaScript/jquery-3.1.1.min.js"></script>
+    <script src="JavaScript/javaScriptMain.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINF Project F1 Cars</title>
+</head>
+<body>
+<header>
+    <div class="menubar">
+        <a href="mainPage.html"><img alt="mainPage" src="img/800px-F1_logo.svg.png" id="bannerpic"></a>
+        <ul>
+            <li class="a"><a href="general.html" class="menuitem">General</a></li>
+            <li class="a"><a href="drivers.html" class="menuitem">Drivers</a></li>
+            <li class="a"><a href="#" class="menuitem">Cars</a></li>
+            <li class="a"><a href="#" class="menuitem">Sample</a></li>
+            <li class="a"><a href="#" class="menuitem">Sample</a></li>
+        </ul>
+    </div>
+</header>
+<section id="imageslider">
+    <div id="imagesliderwrap" class="clearfix">
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Mercedes.jpg">
+            <div class="imageheader">Mercedes</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/RedBull.jpg">
+            <div class="imageheader">Red Bull Racing</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Ferrari.jpg">
+            <div class="imageheader">Scuderia Ferrari</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/ForceIndia.jpg">
+            <div class="imageheader">Sahara Force India</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Williams.jpg">
+            <div class="imageheader">Williams Martini Racing</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/McLarenHonda.jpg">
+            <div class="imageheader">McLaren Honda</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/TorroRosso.jpg">
+            <div class="imageheader">Torro Rosso</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Haas.jpg">
+            <div class="imageheader">Haas F1 Team</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Renault.jpg">
+            <div class="imageheader">Renault Sport Formula One Team</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Sauber.jpg">
+            <div class="imageheader">Sauber F1 Team</div>
+        </div>
+        <div class="imageslidertext">
+            <img class="imageslider" src="img/Manor.jpg">
+            <div class="imageheader">Manor Racing</div>
+        </div>
+        <a onclick="plusDivs(-1)"><img src="img/Buttonslider%20-%20reverse.jpg" id="sliderbutton1"></a>
+        <a onclick="plusDivs(+1)"><img id="sliderbutton2" src="img/Buttonslider.jpg"></a>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("imageslider");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</section>
+<section>
+    <article id="carstext">
+        <h2 class="headline">Cars</h2>
+        <p class="text">A Formula One car is a single-seat, open cockpit, open-wheel racing car with substantial front
+            and rear wings,
+            and an engine positioned behind the driver, intended to be used in competition at Formula One racing events.
+            The
+            regulations governing the cars are unique to the championship. The Formula One regulations specify that cars
+            must be constructed by the racing teams themselves, though the design and manufacture can be outsourced.</p>
+    </article>
+</section>
+<div class="clearfix" id="placeholder"></div>
+<footer>
+    <p id="footer">Diego Schleis</p>
+</footer>
+</body>
+</html>
